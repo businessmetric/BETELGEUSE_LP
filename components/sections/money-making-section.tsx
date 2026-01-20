@@ -84,10 +84,13 @@ export function MoneyMakingSection() {
         </p>
         
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {moneyMakingWays.map((way) => (
+          {moneyMakingWays.map((way, index) => (
             <div 
               key={way.id}
-              className="bg-[#0a0a0a] border border-[#222] p-8 hover:border-[#333] transition-all group"
+              className="group bg-[#0a0a0a] border border-[#222] p-8 hover:border-[#333] transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,255,136,0.1)] hover:transform hover:scale-[1.02] animate-in fade-in slide-in-from-bottom-4"
+              style={{
+                animationDelay: `${index * 100}ms`,
+              }}
             >
               {/* Icon and Title */}
               <div className="flex items-center gap-4 mb-6">

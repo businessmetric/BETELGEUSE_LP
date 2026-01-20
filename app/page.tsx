@@ -12,7 +12,6 @@ import { FAQSection } from "@/components/sections/faq-section"
 import { CTASection } from "@/components/sections/cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
 import { StickyCTA } from "@/components/sticky-cta"
-import { ExitIntentPopup } from "@/components/exit-intent-popup"
 
 export default function BetelgeuseLanding() {
   return (
@@ -31,7 +30,6 @@ export default function BetelgeuseLanding() {
       <CTASection />
       <FooterSection />
       <StickyCTA />
-      <ExitIntentPopup />
     </main>
   )
 }

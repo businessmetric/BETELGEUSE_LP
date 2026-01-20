@@ -48,10 +48,13 @@ export function ProblemsSection() {
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {problems.map((problem) => (
+          {problems.map((problem, index) => (
             <div 
               key={problem.id}
-              className="bg-[#0a0a0a] border border-[#222] p-6 md:p-8 hover:border-[#333] transition-colors"
+              className="group bg-[#0a0a0a] border border-[#222] p-6 md:p-8 hover:border-[#333] hover:shadow-[0_0_20px_rgba(255,68,68,0.1)] transition-all duration-500 hover:transform hover:scale-[1.02] animate-in fade-in slide-in-from-bottom-4"
+              style={{
+                animationDelay: `${index * 100}ms`,
+              }}
             >
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-3xl">{problem.icon}</span>
