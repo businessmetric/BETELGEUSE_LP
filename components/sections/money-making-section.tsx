@@ -1,58 +1,76 @@
 "use client"
 
-import { DollarSign, Database, Plug, TrendingUp } from "lucide-react"
+import { Briefcase, TrendingUp, Zap, Target, Rocket } from "lucide-react"
 
 const moneyMakingWays = [
   {
     id: 1,
-    icon: <DollarSign className="w-8 h-8" />,
-    title: "Продажа готовых решений",
+    icon: <Briefcase className="w-8 h-8" />,
+    title: "Проекты на заказ",
     examples: [
-      "Шаблоны лендингов или сайты",
-      "Базы данных с аналитикой",
-      "Dashboard'ы для стартапов",
+      "Сайты и лендинги",
+      "SaaS решения",
+      "Интеграции систем",
+      "Telegram боты",
     ],
-    potential: "от 30,000₽ до 300,000₽",
-    reality: "Участник создал 8 шаблонов за 3 месяца — заработал 180,000₽",
+    potential: "от 15,000₽ до 500,000₽",
+    reality: "Запустил 3 проекта за месяц — заработал 120,000₽",
     color: "#00ff88",
   },
   {
     id: 2,
-    icon: <Plug className="w-8 h-8" />,
-    title: "Заработок на интеграциях",
+    icon: <TrendingUp className="w-8 h-8" />,
+    title: "Рост стоимости на рынке",
     examples: [
-      "AmoCRM + Битрикс24",
-      "Telegram боты + CRM",
-      "API между сервисами",
+      "Новые востребованные навыки",
+      "Повышение ценности как специалиста",
+      "Умение создавать цифровые продукты",
+      "Независимость от программистов",
     ],
-    potential: "3,000₽ - 25,000₽ за интеграцию",
-    reality: "5 интеграций в месяц = 75,000₽ дохода",
+    potential: "+30% к текущей ЗП",
+    reality: "Маркетолог с 80,000₽ → 104,000₽ после курса (+24,000₽/мес = +288,000₽/год)",
     color: "#ffd700",
   },
   {
     id: 3,
-    icon: <TrendingUp className="w-8 h-8" />,
-    title: "Подписка на свой SaaS",
+    icon: <Zap className="w-8 h-8" />,
+    title: "Ускорение через автоматизации",
     examples: [
-      "Аналитика и автоматизация",
-      "CRM для ниши",
-      "Инструменты для бизнеса",
+      "Автоматизация рутинных задач",
+      "Скрипты для работы",
+      "Боты-помощники",
+      "Инструменты для эффективности",
     ],
-    potential: "5,000₽ - 50,000₽/месяц recurring",
-    reality: "15 платящих клиентов по 5,000₽ = 75,000₽/мес = 900,000₽/год",
+    potential: "Освобождаешь 2 часа в день",
+    reality: "2 часа × 22 дня = 44 часа/месяц свободного времени для новых проектов",
     color: "#00d4ff",
   },
   {
     id: 4,
-    icon: <Database className="w-8 h-8" />,
-    title: "Консалтинг + внедрение",
+    icon: <Target className="w-8 h-8" />,
+    title: "Новые точки роста",
     examples: [
-      "Digital трансформация бизнеса",
+      "Собственная аналитика",
+      "Инструменты для работы",
       "Автоматизация процессов",
-      "Создание IT-инфраструктуры",
+      "Улучшение продуктивности",
     ],
-    potential: "150,000₽ - 800,000₽ за проект",
-    reality: "1 проект в месяц = 1,800,000₽/год",
+    potential: "Выше эффективность работы",
+    reality: "Создал аналитику для своих проектов — увеличил конверсию на 40%",
+    color: "#a855f7",
+  },
+  {
+    id: 5,
+    icon: <Rocket className="w-8 h-8" />,
+    title: "Свой SaaS или IT решение",
+    examples: [
+      "Создание продукта",
+      "Монетизация сервиса",
+      "Подписочная модель",
+      "Масштабируемый доход",
+    ],
+    potential: "Зависит от продукта",
+    reality: "Запустил SaaS за 3 месяца → 8 клиентов × 5,000₽ = 40,000₽/мес recurring",
     color: "#ff4444",
   },
 ]
@@ -74,27 +92,21 @@ export function MoneyMakingSection() {
       <div className="max-w-6xl mx-auto relative z-10">
         <p className="text-[#00ff88] text-sm tracking-widest mb-4">МОНЕТИЗАЦИЯ</p>
         <h2 className="text-3xl md:text-5xl text-white mb-6">
-          Способы заработка после курса
+          Твоя прибыль после вступления в Акселератор
         </h2>
-        <p className="text-xl text-[#888] mb-4 max-w-2xl">
+        <p className="text-xl text-[#888] mb-16 max-w-2xl">
           Не просто навыки — конкретные сценарии дохода
         </p>
-        <p className="text-[#ffd700] text-lg font-bold mb-16">
-          Твоя прибыль после вступления в Акселератор (вместо способы заработка)
-        </p>
         
-        <div className="mb-12 text-center">
-          <p className="text-[#666] text-sm mb-2">Потенциал:</p>
-          <p className="text-[#00ff88] text-4xl md:text-5xl font-bold">
-            от 500,000₽ до 3,000,000₽ в год
+        <div className="mb-12 text-center bg-gradient-to-r from-[#00ff88]/10 to-[#ffd700]/10 border-2 border-[#00ff88] p-8">
+          <p className="text-[#00ff88] text-sm tracking-widest mb-3">ПОТЕНЦИАЛ</p>
+          <p className="text-white text-4xl md:text-5xl font-bold mb-2">
+            от 500,000₽ до 3,000,000₽
           </p>
+          <p className="text-[#888] text-lg">в год</p>
         </div>
-        <p className="text-[#ffd700] text-2xl font-bold mb-16">
-          Потенциал: от 500,000₽ до 3,000,000₽ в год
-        </p>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {moneyMakingWays.map((way, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">{moneyMakingWays.slice(0, 3).map((way, index) => (
             <div 
               key={way.id}
               className="group bg-[#0a0a0a] border border-[#222] p-8 hover:border-[#333] transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,255,136,0.1)] hover:transform hover:scale-[1.02] animate-in fade-in slide-in-from-bottom-4"
@@ -119,6 +131,55 @@ export function MoneyMakingSection() {
                 <ul className="space-y-2">
                   {way.examples.map((example, index) => (
                     <li key={index} className="flex items-start gap-2">
+                      <span style={{ color: way.color }}>▸</span>
+                      <span className="text-[#ccc] text-sm">{example}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              {/* Potential */}
+              <div className="bg-[#111] p-4 mb-4 border-l-2" style={{ borderColor: way.color }}>
+                <p className="text-[#666] text-xs mb-1">Потенциал дохода:</p>
+                <p className="text-white text-lg font-bold">{way.potential}</p>
+              </div>
+              
+              {/* Reality check */}
+              <div className="bg-[#001a0d] border border-[#00ff88]/20 p-4">
+                <p className="text-[#00ff88] text-xs mb-1">💡 Реальный кейс:</p>
+                <p className="text-[#888] text-sm">{way.reality}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Bottom 2 cards - full width */}
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          {moneyMakingWays.slice(3, 5).map((way, index) => (
+            <div 
+              key={way.id}
+              className="group bg-[#0a0a0a] border border-[#222] p-8 hover:border-[#333] transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,255,136,0.1)] hover:transform hover:scale-[1.02] animate-in fade-in slide-in-from-bottom-4"
+              style={{
+                animationDelay: `${(index + 3) * 100}ms`,
+              }}
+            >
+              {/* Icon and Title */}
+              <div className="flex items-center gap-4 mb-6">
+                <div 
+                  className="w-16 h-16 flex items-center justify-center border-2 rounded-lg group-hover:scale-110 transition-transform"
+                  style={{ borderColor: way.color, color: way.color }}
+                >
+                  {way.icon}
+                </div>
+                <h3 className="text-white text-2xl font-bold">{way.title}</h3>
+              </div>
+              
+              {/* Examples */}
+              <div className="mb-6">
+                <p className="text-[#666] text-sm mb-3">Что делаешь:</p>
+                <ul className="space-y-2">
+                  {way.examples.map((example, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
                       <span style={{ color: way.color }}>▸</span>
                       <span className="text-[#ccc] text-sm">{example}</span>
                     </li>
