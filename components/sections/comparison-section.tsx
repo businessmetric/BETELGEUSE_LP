@@ -75,7 +75,7 @@ export function ComparisonSection() {
               </div>
               
               <div className="bg-[#00ff88]/10 p-4 border border-[#00ff88]">
-                <p className="text-white text-sm mb-1">ИТОГО через 6 месяцев:</p>
+                <p className="text-white text-sm mb-1">ИТОГО через 3 месяца:</p>
                 <p className="text-[#00ff88] text-3xl font-bold">45,000₽</p>
                 <ul className="text-[#ccc] text-sm mt-3 space-y-1">
                   <li>+ Полная независимость</li>
@@ -95,7 +95,7 @@ export function ComparisonSection() {
             💡 Экономия: от 315,000₽ до 645,000₽
           </p>
           <p className="text-white text-lg">
-            Вместо 9 месяцев зависимости → 6 месяцев независимости
+            Вместо 9 месяцев зависимости → 3 месяца независимости
           </p>
         </div>
       </div>

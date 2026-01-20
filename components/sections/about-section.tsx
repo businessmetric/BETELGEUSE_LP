@@ -82,10 +82,10 @@ export function AboutSection() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-[#0a0a0a] border border-[#333] p-6 text-center hover:border-[#00ff88] transition-all hover:shadow-[0_0_20px_rgba(0,255,136,0.1)]">
               <div className="bg-white/5 w-24 h-24 mx-auto mb-4 flex items-center justify-center text-4xl font-bold text-white">
-                Л
+                1С
               </div>
-              <h4 className="text-white text-xl font-bold mb-2">ЛАНИТ</h4>
-              <p className="text-[#666] text-sm">корпоративная IT</p>
+              <h4 className="text-white text-xl font-bold mb-2">1С</h4>
+              <p className="text-[#666] text-sm">корпоративные системы</p>
             </div>
             
             <div className="bg-[#0a0a0a] border border-[#333] p-6 text-center hover:border-[#ffd700] transition-all hover:shadow-[0_0_20px_rgba(255,215,0,0.1)]">
@@ -116,7 +116,7 @@ export function AboutSection() {
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[#ffd700] text-3xl">✓</span>
-              <span className="text-white text-lg">Консультировал McDonald's и ЛАНИТ</span>
+              <span className="text-white text-lg">Консультировал McDonald's и 1С</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[#00d4ff] text-3xl">✓</span>

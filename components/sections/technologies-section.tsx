@@ -144,7 +144,7 @@ export function TechnologiesSection() {
               <p className="text-[#888] text-sm">Каждый инструмент в деле</p>
             </div>
             <div>
-              <p className="text-[#00d4ff] text-3xl font-bold mb-2">6 мес</p>
+              <p className="text-[#00d4ff] text-3xl font-bold mb-2">3 мес</p>
               <p className="text-white font-medium mb-1">От нуля до продакшна</p>
               <p className="text-[#888] text-sm">Полный стек разработки</p>
             </div>

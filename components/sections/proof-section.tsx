@@ -8,7 +8,7 @@ const projects = [
     url: "https://veeneo.ru/",
     type: "SaaS для маркетинг-аналитики",
     desc: "Платформа для сквозной аналитики: ETL, трансформация данных, дашборды",
-    clients: ["ЛАНИТ", "McDonald's", "FunSun"],
+    clients: ["1С", "McDonald's", "FunSun"],
     benefits: [
       "Вся аналитика в одном месте",
       "Не нужны программисты для интеграций",
@@ -137,7 +137,7 @@ export function ProofSection() {
               <span className="text-[#ffd700]">Факт:</span> Я создал их как маркетолог, не как программист.
             </p>
             <p className="text-[#00ff88]">
-              <span className="text-[#ffd700]">Вывод:</span> Если я это создал за 2 года — ты сможешь за 6 месяцев с поддержкой.
+              <span className="text-[#ffd700]">Вывод:</span> Если я это создал за 2 года — ты сможешь за 3 месяца с поддержкой.
             </p>
           </div>
         </div>

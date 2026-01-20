@@ -36,28 +36,7 @@ const testimonials = [
   },
 ]
 
-const chatScreenshots = [
-  {
-    author: "Иван П.",
-    message: "Кто-нибудь знает как правильно настроить CORS в Next.js?",
-    reply: "Ира Б.",
-    replyText: "Вот гайд который я использую... [ссылка]",
-    time: "13:24",
-  },
-  {
-    author: "Катя Л.",
-    message: "Я запустила! Первый пользователь зарегистрировался! 🎉",
-    likes: "12 ❤️",
-    time: "Вчера в 18:42",
-  },
-  {
-    author: "Максим Р.",
-    message: "Спасибо за code review! Исправил все замечания, теперь работает идеально",
-    reply: "Ира Б.",
-    replyText: "Отлично! Теперь можно деплоить на прод 🚀",
-    time: "2 дня назад",
-  },
-]
+const chatScreenshots: never[] = []
 
 export function TestimonialsSection() {
   return (
@@ -124,48 +103,6 @@ export function TestimonialsSection() {
               </div>
             </div>
           ))}
-        </div>
-        
-        {/* Chat Screenshots Section */}
-        <div className="bg-[#0a0a0a] border border-[#333] p-8">
-          <h3 className="text-white text-2xl mb-4">Внутри чата — живое комьюнити</h3>
-          <p className="text-[#888] mb-8">Вопросы решаются за минуты, не дни. Ты не один.</p>
-          
-          <div className="space-y-4">
-            {chatScreenshots.map((chat, index) => (
-              <div key={index} className="bg-[#111] p-4 border-l-2 border-[#00ff88]">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-[#00ff88] text-black flex items-center justify-center text-xs font-bold">
-                    {chat.author.charAt(0)}
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white text-sm mb-1">
-                      <span className="font-medium">{chat.author}</span>
-                      <span className="text-[#666] text-xs ml-2">{chat.time}</span>
-                    </p>
-                    <p className="text-[#ccc] text-sm mb-2">{chat.message}</p>
-                    
-                    {chat.reply && (
-                      <div className="ml-4 pl-3 border-l-2 border-[#ffd700] mt-2">
-                        <p className="text-[#ffd700] text-xs mb-1">{chat.reply}</p>
-                        <p className="text-[#aaa] text-sm">{chat.replyText}</p>
-                      </div>
-                    )}
-                    
-                    {chat.likes && (
-                      <p className="text-[#666] text-xs mt-2">{chat.likes}</p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-8 text-center">
-            <p className="text-[#00ff88] text-sm">
-              💬 Средний ответ на вопрос: 12 минут
-            </p>
-          </div>
         </div>
         
         {/* Stats */}

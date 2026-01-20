@@ -81,7 +81,7 @@ export function ProjectsSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         <p className="text-[#00ff88] text-sm tracking-widest mb-4">ЧТО МЫ СОЗДАЁМ</p>
         <h2 className="text-3xl md:text-5xl text-white mb-6">
-          5 реальных IT-проектов за 6 месяцев
+          5 реальных IT-проектов за 3 месяца
         </h2>
         <p className="text-xl text-[#888] mb-16 max-w-3xl">
           Не учебные задачки — полноценные сервисы, которые можно продавать, внедрять клиентам или запускать как SaaS

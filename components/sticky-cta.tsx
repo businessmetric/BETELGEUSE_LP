@@ -23,12 +23,12 @@ export function StickyCTA() {
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
         <div className="hidden md:block">
           <p className="text-white text-sm font-medium">Старт 1 февраля • Осталось 32 места из 50</p>
-          <p className="text-[#666] text-xs">Создай свой IT-сервис за 6 месяцев</p>
+          <p className="text-[#666] text-xs">Создай свой IT-сервис за 3 месяца</p>
         </div>
         <div className="flex items-center gap-4 w-full md:w-auto">
           <div className="hidden sm:block text-right">
             <p className="text-[#00ff88] text-lg font-bold">45 000 ₽</p>
-            <p className="text-[#666] text-xs">за 6 месяцев</p>
+            <p className="text-[#666] text-xs">за 3 месяца</p>
           </div>
           <Button 
             size="lg"

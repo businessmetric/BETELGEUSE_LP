@@ -36,7 +36,7 @@ export function HeroSection() {
           <h1 className="text-3xl md:text-5xl lg:text-6xl text-white leading-tight mb-6 text-balance min-h-[120px] md:min-h-[180px]">
             <Typewriter 
               texts={[
-                "Создай свой IT-сервис за 6 месяцев",
+                "Создай свой IT-сервис за 3 месяца",
                 "С гарантией создания",
                 "Без кучи теории",
                 "Сразу в практику",

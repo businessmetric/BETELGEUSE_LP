@@ -13,7 +13,7 @@ export function PricingSection() {
             <div className="mb-8">
               <p className="text-[#00ff88] text-5xl font-bold mb-2">45 000 ₽</p>
               <p className="text-[#888] text-sm mb-1">за 3 месяца</p>
-              <p className="text-[#666] text-xs">(1 февраля — конец июля 2026, 6 месяцев)</p>
+              <p className="text-[#666] text-xs">(1 февраля — конец апреля 2026, 3 месяца)</p>
             </div>
             
             <h3 className="text-white text-lg mb-6">Что входит:</h3>
@@ -77,7 +77,7 @@ export function PricingSection() {
               <div className="bg-[#111] p-4 border-l-2 border-[#ffd700]">
                 <p className="text-[#888] mb-2">45 000 ₽ = цена 1.5 месяца junior разработчика в Москве</p>
                 <p className="text-white font-medium">
-                  За 6 месяцев сэкономишь ~900 000 ₽ на том, что не нанимаешь программиста.
+                  За 3 месяца сэкономишь ~450 000 ₽ на том, что не нанимаешь программиста.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export function PricingSection() {
               
               <div className="bg-[#001a0d] border border-[#00ff88] p-6">
                 <p className="text-[#ccc] mb-3">
-                  Если приходишь, добросовестно работаешь 6 месяцев и при этом не создал ничего рабочего —
+                  Если приходишь, добросовестно работаешь 3 месяца и при этом не создал ничего рабочего —
                 </p>
                 <p className="text-[#00ff88] text-xl font-bold">
                   ДЕНЬГИ НАЗАД. БЕЗ ВОПРОСОВ.

@@ -48,7 +48,7 @@ export function TimelineSection() {
     <section className="px-4 md:px-8 lg:px-16 py-24 bg-[#050505]">
       <div className="max-w-5xl mx-auto">
         <p className="text-[#00ff88] text-sm tracking-widest mb-4">ПРОГРАММА</p>
-        <h2 className="text-3xl md:text-4xl text-white mb-16">6 месяцев шаг за шагом</h2>
+        <h2 className="text-3xl md:text-4xl text-white mb-16">3 месяца шаг за шагом</h2>
         
         <div className="relative">
           {/* Timeline line - desktop */}
@@ -110,7 +110,7 @@ export function TimelineSection() {
         
         {/* Parallel tasks */}
         <div className="mt-16 border border-[#00ff88] bg-[#0a0a0a] p-8">
-          <h3 className="text-white text-xl mb-6">Параллельно все 6 месяцев:</h3>
+          <h3 className="text-white text-xl mb-6">Параллельно все 3 месяца:</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-start gap-4">
               <span className="text-[#00ff88] text-2xl">👥</span>

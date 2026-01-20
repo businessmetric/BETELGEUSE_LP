@@ -51,7 +51,7 @@ export function SolutionSection() {
             </div>
             <h3 className="text-white text-xl mb-4">Маркетологов в когорте</h3>
             <div className="space-y-3 text-sm text-[#888]">
-              <p>Вместе 6 месяцев (с 1 февраля).</p>
+              <p>Вместе 3 месяца (с 1 февраля).</p>
               <p>Git + совместная разработка.</p>
               <p>Реальные люди, реальные проблемы.</p>
               <p className="text-[#00ff88]">Тебя не оставят одного.</p>
@@ -87,7 +87,7 @@ export function SolutionSection() {
             <div className="border-l-2 border-[#00d4ff] pl-6">
               <h4 className="text-[#00d4ff] text-lg mb-3">От маркетолога к founder</h4>
               <p className="text-[#ccc] mb-3">
-                За 6 месяцев получишь 2 работающих сервиса, умение создавать такие сервисы повторно, независимость от программистов.
+                За 3 месяца получишь 2 работающих сервиса, умение создавать такие сервисы повторно, независимость от программистов.
               </p>
               <p className="text-white font-medium">
                 Новая позиция: tech-founder.

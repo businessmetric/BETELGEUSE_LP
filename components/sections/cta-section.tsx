@@ -56,7 +56,7 @@ export function CTASection() {
         <div className="pt-10 max-w-xl mx-auto">
           <h3 className="text-white text-lg mb-4">Интервью — это не испытание</h3>
           <p className="text-[#888]">
-            Я проверяю: готов ли ты вкладываться в 6 месяцев.
+            Я проверяю: готов ли ты вкладываться в 3 месяца.
             <br />
             Ты проверяешь: стоит ли это делать на самом деле.
           </p>
