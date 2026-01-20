@@ -19,13 +19,13 @@ export default function BetelgeuseLanding() {
   return (
     <main className="min-h-screen bg-black text-[#00ff88] relative scanlines">
       <HeroSection />
+      <MoneyMakingSection />
+      <ProjectsSection />
       <AboutSection />
       <ProblemsSection />
       <SolutionSection />
-      <ProjectsSection />
       <TechnologiesSection />
       <ComparisonSection />
-      <MoneyMakingSection />
       <ProofSection />
       <TestimonialsSection />
       <PricingSection />
