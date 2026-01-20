@@ -8,10 +8,32 @@ export function AboutSection() {
     <section className="px-4 md:px-8 lg:px-16 py-24">
       <div className="max-w-5xl mx-auto">
         <p className="text-[#00ff88] text-sm tracking-widest mb-4">КТО ВЕДЁТ</p>
-        <h2 className="text-3xl md:text-4xl text-white mb-6">Senior Marketing Analyst & IT-предприниматель</h2>
+        <h2 className="text-3xl md:text-4xl text-white mb-12">Senior Marketing Analyst & IT-предприниматель</h2>
+        
+        {/* Photo */}
+        <div className="mb-12 flex justify-center animate-in fade-in slide-in-from-bottom-4">
+          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#00ff88] hover:scale-105 transition-transform duration-500 hover:shadow-[0_0_40px_rgba(0,255,136,0.3)]">
+            <Image
+              src="/images/profile.jpg"
+              alt="Александр Горбатов"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
+          </div>
+        </div>
+        
+        {/* Name and Age */}
+        <div className="text-center mb-8 animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: "150ms" }}>
+          <h3 className="text-white text-3xl md:text-4xl font-bold mb-2">
+            Александр Горбатов
+          </h3>
+          <p className="text-[#888] text-xl mb-6">35 лет</p>
+        </div>
         
         {/* Wow Facts */}
-        <div className="flex flex-wrap gap-6 mb-12">
+        <div className="flex flex-wrap gap-6 mb-12 justify-center animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: "300ms" }}>
           <div className="flex items-center gap-2">
             <span className="text-[#00ff88] text-2xl">✓</span>
             <span className="text-white">Запустил <AnimatedCounter end={3} className="text-[#00ff88] font-bold" /> SaaS, которые зарабатывают</span>
@@ -27,19 +49,6 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <span className="text-[#ff4444] text-2xl">✓</span>
             <span className="text-white"><AnimatedCounter end={2} className="text-[#ff4444] font-bold" /> года преподаю в Нетологии</span>
-          </div>
-        </div>
-        
-        {/* Photo */}
-        <div className="mb-12 flex justify-center">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-2 border-[#00ff88]">
-            <Image
-              src="/images/profile.jpg"
-              alt="Ира"
-              fill
-              className="object-cover"
-              priority
-            />
           </div>
         </div>
         
