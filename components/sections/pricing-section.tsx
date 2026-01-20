@@ -12,7 +12,8 @@ export function PricingSection() {
           <div className="bg-[#0a0a0a] border-2 border-[#00ff88] p-8">
             <div className="mb-8">
               <p className="text-[#00ff88] text-5xl font-bold mb-2">45 000 ₽</p>
-              <p className="text-[#888]">за 6 месяцев (1 февраля — конец июля 2026)</p>
+              <p className="text-[#888] text-sm mb-1">за 3 месяца</p>
+              <p className="text-[#666] text-xs">(1 февраля — конец июля 2026, 6 месяцев)</p>
             </div>
             
             <h3 className="text-white text-lg mb-6">Что входит:</h3>

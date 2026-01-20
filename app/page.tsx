@@ -2,6 +2,8 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ProblemsSection } from "@/components/sections/problems-section"
 import { SolutionSection } from "@/components/sections/solution-section"
+import { ProjectsSection } from "@/components/sections/projects-section"
+import { TechnologiesSection } from "@/components/sections/technologies-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
 import { MoneyMakingSection } from "@/components/sections/money-making-section"
 import { ProofSection } from "@/components/sections/proof-section"
@@ -20,6 +22,8 @@ export default function BetelgeuseLanding() {
       <AboutSection />
       <ProblemsSection />
       <SolutionSection />
+      <ProjectsSection />
+      <TechnologiesSection />
       <ComparisonSection />
       <MoneyMakingSection />
       <ProofSection />

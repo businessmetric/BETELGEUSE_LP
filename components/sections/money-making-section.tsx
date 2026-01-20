@@ -79,6 +79,16 @@ export function MoneyMakingSection() {
         <p className="text-xl text-[#888] mb-4 max-w-2xl">
           Не просто навыки — конкретные сценарии дохода
         </p>
+        <p className="text-[#ffd700] text-lg font-bold mb-16">
+          Твоя прибыль после вступления в Акселератор (вместо способы заработка)
+        </p>
+        
+        <div className="mb-12 text-center">
+          <p className="text-[#666] text-sm mb-2">Потенциал:</p>
+          <p className="text-[#00ff88] text-4xl md:text-5xl font-bold">
+            от 500,000₽ до 3,000,000₽ в год
+          </p>
+        </div>
         <p className="text-[#ffd700] text-2xl font-bold mb-16">
           Потенциал: от 500,000₽ до 3,000,000₽ в год
         </p>
