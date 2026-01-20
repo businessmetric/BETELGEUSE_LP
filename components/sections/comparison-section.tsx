@@ -11,7 +11,7 @@ export function ComparisonSection() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Without Betelgeuse */}
-          <div className="bg-[#1a0505] border-2 border-[#ff4444] p-8 hover:shadow-[0_0_30px_rgba(255,68,68,0.2)] transition-all duration-500 animate-in fade-in slide-in-from-left-4">
+          <div className="bg-[#0a0a0a] border-2 border-[#ff4444] p-8 hover:shadow-[0_0_30px_rgba(255,68,68,0.2)] transition-all duration-500 animate-in fade-in slide-in-from-left-4">
             <h3 className="text-[#ff4444] text-2xl font-bold mb-6 flex items-center gap-3">
               <span className="text-3xl">❌</span>
               БЕЗ BETELGEUSE
@@ -49,7 +49,7 @@ export function ComparisonSection() {
           </div>
           
           {/* With Betelgeuse */}
-          <div className="bg-[#001a0d] border-2 border-[#00ff88] p-8 hover:shadow-[0_0_30px_rgba(0,255,136,0.2)] transition-all duration-500 animate-in fade-in slide-in-from-right-4" style={{ animationDelay: "150ms" }}>
+          <div className="bg-[#0a0a0a] border-2 border-[#00ff88] p-8 hover:shadow-[0_0_30px_rgba(0,255,136,0.2)] transition-all duration-500 animate-in fade-in slide-in-from-right-4" style={{ animationDelay: "150ms" }}>
             <h3 className="text-[#00ff88] text-2xl font-bold mb-6 flex items-center gap-3">
               <span className="text-3xl">✅</span>
               С BETELGEUSE

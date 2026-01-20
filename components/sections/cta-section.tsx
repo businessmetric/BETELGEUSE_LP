@@ -53,7 +53,7 @@ export function CTASection() {
           15 минут разговора. Ты расскажешь о себе. Я скажу, подходит это тебе или нет.
         </p>
         
-        <div className="border-t border-[#333] pt-10 max-w-xl mx-auto">
+        <div className="pt-10 max-w-xl mx-auto">
           <h3 className="text-white text-lg mb-4">Интервью — это не испытание</h3>
           <p className="text-[#888]">
             Я проверяю: готов ли ты вкладываться в 6 месяцев.

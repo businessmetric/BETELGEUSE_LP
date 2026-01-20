@@ -8,9 +8,9 @@ interface TypewriterProps {
 }
 
 export function Typewriter({ texts, className = "" }: TypewriterProps) {
-  const [displayText, setDisplayText] = useState("")
+  const [displayText, setDisplayText] = useState(texts[0] || "")
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
-  const [currentCharIndex, setCurrentCharIndex] = useState(0)
+  const [currentCharIndex, setCurrentCharIndex] = useState(texts[0]?.length || 0)
   const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {

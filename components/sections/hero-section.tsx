@@ -49,6 +49,23 @@ export function HeroSection() {
           </p>
         </div>
         
+        {/* CTA Block with Progress Bar First */}
+        <div className="bg-[#0a0a0a] border border-[#333] p-6 md:p-8 mb-12">
+          <div className="flex flex-col md:flex-row md:items-center gap-6 mb-6">
+            <div className="flex-1">
+              <p className="text-[#00ff88] text-lg mb-2">Старт 1 февраля 2026</p>
+              <p className="text-[#888]">Интервью — 15 минут.</p>
+            </div>
+            <Button 
+              size="lg"
+              className="bg-[#00ff88] text-black hover:bg-[#00cc6a] text-lg px-8 py-6 h-auto font-bold whitespace-nowrap"
+            >
+              Записаться на интервью
+            </Button>
+          </div>
+          <ProgressBar />
+        </div>
+        
         {/* Value propositions */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="border-l-2 border-[#00ff88] pl-4 py-2">
@@ -62,23 +79,6 @@ export function HeroSection() {
           <div className="border-l-2 border-[#00d4ff] pl-4 py-2">
             <p className="text-white text-lg mb-1">Гарантия возврата</p>
             <p className="text-[#666] text-sm">Если не научишься</p>
-          </div>
-        </div>
-        
-        {/* CTA Block */}
-        <div className="bg-[#0a0a0a] border border-[#333] p-6 md:p-8 mb-12">
-          <ProgressBar />
-          <div className="flex flex-col md:flex-row md:items-center gap-6 mt-6">
-            <div className="flex-1">
-              <p className="text-[#00ff88] text-lg mb-2">Старт 1 февраля 2026</p>
-              <p className="text-[#888]">Интервью — 15 минут.</p>
-            </div>
-            <Button 
-              size="lg"
-              className="bg-[#00ff88] text-black hover:bg-[#00cc6a] text-lg px-8 py-6 h-auto font-bold whitespace-nowrap"
-            >
-              Записаться на интервью
-            </Button>
           </div>
         </div>
         

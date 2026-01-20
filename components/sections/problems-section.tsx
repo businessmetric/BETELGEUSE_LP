@@ -42,7 +42,7 @@ export function ProblemsSection() {
     <section className="px-4 md:px-8 lg:px-16 py-24 bg-[#050505]">
       <div className="max-w-5xl mx-auto">
         <p className="text-[#ff4444] text-sm tracking-widest mb-4">ЗНАКОМО?</p>
-        <h2 className="text-3xl md:text-4xl text-white mb-6">Ты уже слышал эти истории?</h2>
+        <h2 className="text-3xl md:text-4xl text-white mb-6">Что сегодня тебя ограничивает</h2>
         <p className="text-[#888] text-lg mb-16 max-w-2xl">
           Если хотя бы одна из них про тебя — читай дальше.
         </p>

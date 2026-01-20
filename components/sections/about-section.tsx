@@ -6,97 +6,125 @@ import { AnimatedCounter } from "@/components/animated-counter"
 export function AboutSection() {
   return (
     <section className="px-4 md:px-8 lg:px-16 py-24">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <p className="text-[#00ff88] text-sm tracking-widest mb-4">КТО ВЕДЁТ</p>
         <h2 className="text-3xl md:text-4xl text-white mb-12">Senior Marketing Analyst & IT-предприниматель</h2>
         
-        {/* Photo */}
-        <div className="mb-12 flex justify-center animate-in fade-in slide-in-from-bottom-4">
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#00ff88] hover:scale-105 transition-transform duration-500 hover:shadow-[0_0_40px_rgba(0,255,136,0.3)]">
-            <Image
-              src="/images/profile.jpg"
-              alt="Александр Горбатов"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
+        {/* Main Layout: Photo Left, Info Right */}
+        <div className="grid md:grid-cols-[300px_1fr] gap-12 mb-16">
+          {/* Left - Photo */}
+          <div className="flex flex-col items-center gap-6">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-[#00ff88] hover:scale-105 transition-transform duration-500 hover:shadow-[0_0_40px_rgba(0,255,136,0.3)]">
+              <Image
+                src="/images/profile.jpg"
+                alt="Александр Горбатов"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+          
+          {/* Right - Info */}
+          <div className="flex flex-col justify-center">
+            <h3 className="text-white text-3xl md:text-4xl font-bold mb-2">
+              Александр Горбатов
+            </h3>
+            <p className="text-[#888] text-xl mb-8">35 лет</p>
+            
+            <div className="space-y-6">
+              {/* ФИО, должность уже выше */}
+              
+              {/* Опыт - структурный */}
+              <div>
+                <h4 className="text-[#ffd700] text-lg mb-4">Опыт</h4>
+                <div className="space-y-3">
+                  <div className="flex gap-4">
+                    <span className="text-[#00ff88] font-bold text-lg min-w-[80px]">8 лет</span>
+                    <span className="text-white">запускал Ed-проекты (Roistat Academy)</span>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="text-[#00ff88] font-bold text-lg min-w-[80px]">CEO</span>
+                    <span className="text-white">компании Бизнес-Метрика</span>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="text-[#00ff88] font-bold text-lg min-w-[80px]">CEO</span>
+                    <span className="text-white">SaaS сервиса Veeneo</span>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="text-[#00ff88] font-bold text-lg min-w-[80px]">2 года</span>
+                    <span className="text-white">преподаю в Нетологии</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Ссылка на Facebook */}
+              <div>
+                <a 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#00d4ff] hover:text-white transition-colors border border-[#00d4ff] hover:border-white px-4 py-2"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  Мой Facebook
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         
-        {/* Name and Age */}
-        <div className="text-center mb-8 animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: "150ms" }}>
-          <h3 className="text-white text-3xl md:text-4xl font-bold mb-2">
-            Александр Горбатов
-          </h3>
-          <p className="text-[#888] text-xl mb-6">35 лет</p>
-        </div>
-        
-        {/* Wow Facts */}
-        <div className="flex flex-wrap gap-6 mb-12 justify-center animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: "300ms" }}>
-          <div className="flex items-center gap-2">
-            <span className="text-[#00ff88] text-2xl">✓</span>
-            <span className="text-white">Запустил <AnimatedCounter end={3} className="text-[#00ff88] font-bold" /> SaaS, которые зарабатывают</span>
+        {/* Консультирую - с логотипами */}
+        <div className="mb-16">
+          <h3 className="text-[#ffd700] text-2xl mb-8 text-center">Консультирую</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-[#0a0a0a] border border-[#333] p-6 text-center hover:border-[#00ff88] transition-all hover:shadow-[0_0_20px_rgba(0,255,136,0.1)]">
+              <div className="bg-white/5 w-24 h-24 mx-auto mb-4 flex items-center justify-center text-4xl font-bold text-white">
+                Л
+              </div>
+              <h4 className="text-white text-xl font-bold mb-2">ЛАНИТ</h4>
+              <p className="text-[#666] text-sm">корпоративная IT</p>
+            </div>
+            
+            <div className="bg-[#0a0a0a] border border-[#333] p-6 text-center hover:border-[#ffd700] transition-all hover:shadow-[0_0_20px_rgba(255,215,0,0.1)]">
+              <div className="bg-white/5 w-24 h-24 mx-auto mb-4 flex items-center justify-center text-4xl font-bold text-[#ffd700]">
+                M
+              </div>
+              <h4 className="text-white text-xl font-bold mb-2">McDonald's</h4>
+              <p className="text-[#666] text-sm">глобальная сеть</p>
+            </div>
+            
+            <div className="bg-[#0a0a0a] border border-[#333] p-6 text-center hover:border-[#00d4ff] transition-all hover:shadow-[0_0_20px_rgba(0,212,255,0.1)]">
+              <div className="bg-white/5 w-24 h-24 mx-auto mb-4 flex items-center justify-center text-4xl font-bold text-[#00d4ff]">
+                F
+              </div>
+              <h4 className="text-white text-xl font-bold mb-2">FunSun / ex-TUI</h4>
+              <p className="text-[#666] text-sm">туризм</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[#ffd700] text-2xl">✓</span>
-            <span className="text-white">Консультировал McDonald's и ЛАНИТ</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[#00d4ff] text-2xl">✓</span>
-            <span className="text-white"><AnimatedCounter end={8} className="text-[#00d4ff] font-bold" /> лет в маркетинге</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[#ff4444] text-2xl">✓</span>
-            <span className="text-white"><AnimatedCounter end={2} className="text-[#ff4444] font-bold" /> года преподаю в Нетологии</span>
-          </div>
+          <p className="text-[#00d4ff] text-center mt-6">+ клиенты в Европе и Азии</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Left - Experience */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-[#ffd700] text-lg mb-4">Консультирую</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-4">
-                  <span className="w-2 h-2 bg-[#00ff88]" />
-                  <span className="text-white">ЛАНИТ</span>
-                  <span className="text-[#666] text-sm">корпоративная IT</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <span className="w-2 h-2 bg-[#00ff88]" />
-                  <span className="text-white">McDonald's</span>
-                  <span className="text-[#666] text-sm">глобальная сеть</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <span className="w-2 h-2 bg-[#00ff88]" />
-                  <span className="text-white">FunSun / ex-TUI</span>
-                  <span className="text-[#666] text-sm">туризм</span>
-                </div>
-                <p className="text-[#00d4ff] text-sm pl-6">+ клиенты в Европе и Азии</p>
-              </div>
+          {/* Left - Wow Facts */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <span className="text-[#00ff88] text-3xl">✓</span>
+              <span className="text-white text-lg">Запустил <AnimatedCounter end={3} className="text-[#00ff88] font-bold" /> SaaS, которые зарабатывают</span>
             </div>
-            
-            <div>
-              <h3 className="text-[#ffd700] text-lg mb-4">Опыт</h3>
-              <ul className="space-y-2 text-[#ccc]">
-                <li className="flex items-start gap-3">
-                  <span className="text-[#00ff88] mt-1">8 лет</span>
-                  <span>запускал Ed-проекты (Roistat Academy)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#00ff88] mt-1">CEO</span>
-                  <span>компании Бизнес-Метрика</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#00ff88] mt-1">CEO</span>
-                  <span>SaaS сервиса Veeneo</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#00ff88] mt-1">2 года</span>
-                  <span>преподаю в Нетологии</span>
-                </li>
-              </ul>
+            <div className="flex items-center gap-3">
+              <span className="text-[#ffd700] text-3xl">✓</span>
+              <span className="text-white text-lg">Консультировал McDonald's и ЛАНИТ</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-[#00d4ff] text-3xl">✓</span>
+              <span className="text-white text-lg"><AnimatedCounter end={8} className="text-[#00d4ff] font-bold" /> лет в маркетинге</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-[#ff4444] text-3xl">✓</span>
+              <span className="text-white text-lg"><AnimatedCounter end={2} className="text-[#ff4444] font-bold" /> года преподаю в Нетологии</span>
             </div>
           </div>
           
